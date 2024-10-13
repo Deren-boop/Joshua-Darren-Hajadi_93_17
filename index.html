@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semantik 2</title>
+    <style>
+        .header { background-color: #000; color: #fff; padding: 20px; text-align: center; }
+        .nav-link { font-family: 'Dancing Script', cursive; font-size: 24px; color: #fff; text-decoration: none; margin: 0 15px; transition: color 0.3s; }
+        .nav-link:hover { color: #ffdd57; }
+        .content { padding: 20px; }
+        .footer { background-color: #000; color: #fff; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        .profile-picture img { width: 150px; border-radius: 50%; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+            <a href="#" class="nav-link" data-page="About">About</a>
+            <a href="#" class="nav-link" data-page="Data Diri">Data Diri</a>
+            <a href="#" class="nav-link" data-page="portofolio">Portofolio</a>
+            <a href="#" class="nav-link" data-page="form">Form</a>
+          
+        </nav>
+    </header>
+
+
+<main class="content" id="main">
+        <div id="About" class="page">
+            <h1>Joshua Darren Hajadi</h1>
+            <h3>Contact Me</h3>
+            <p>Email Sekolah: <a href="mailto:9691joshua@kanisius.sch.id">9691joshua@kanisius.sch.id</a></p>
+            <p>Email Pribadi: <a href="mailto:hajadidarren270110@gmail.com">hajadidarren270110@gmail.com</a></p>
+            <p>Nomor Telepon: <a href="tel:087874559858">087874559858</a></p>
+            <p>Shalom, selamat datang di page About saya! Silahkan kalian dapat melihat data diri, portfolio, dan form yang sudah tersedia di kotak navigasi!</p>
+            
+        <p>&copy; 2024 [Joshua Darren Hajadi]. All rights reserved.</p>
+        </div>
+        <div id="Data Diri" class="page" style="display: none;">
+            <h1>Data Diri</h1>
+            <div class="profile-picture">
+                <img src="FotoMe.jpeg" width="150" height="175">
+            </div>
+            <p>Nama: Joshua Darren Hajadi</p>
+            <p>Usia: 14</p>
+            <p>Kelas: 9</p>
+            <p>Sekolah: Kolese Kanisius</p>
+            <p>Hobi: Bermain game, mini soccer, dan pingpong</p>
+            <p>Skill: Menjadi pemimpin untuk diri sendiri dan sesama</p>
+            <p>Tujuan: Memasuki UI dan sukses di bidang kedokteran</p>
+        </div>
+        <div id="portofolio" class="page" style="display: none;">
+             <li align="center"><h1>Portofolio</h1></li
+            <div class="portfolio-item">
+            <p align="center"><img src="apres.jpg" width="150" height="175"></p>
+            
+    <ul style="list-style-type: none; padding: 0;">
+       <li align="center"><h2 class="w3-text-light-grey">Tentang Saya</h2></li>
+    <hr style="width:200px" class="w3-opacity">
+    
+    <br>
+    <p>Halo! Saya Joshua Darren Hajadi, siswa kelas 9 di SMP Kanisius. Saya memiliki minat besar dalam bidang kedokteran, dan selalu bersemangat untuk belajar hal baru serta berpartisipasi dalam berbagai macam kegiatan sekolah.
+<br>
+<br>
+Selama di SMP Kanisius, saya telah mengikuti berbagai kegiatan, seperti OSIS, ekskul PingPong, dan lain - lain. Kegiatan - kegiatan tersebut membantu saya mengembangkan keterampilan kepemimpinan, kolaborasi, dan kreativitas.
+<br>
+
+<br>
+Dengan semangat untuk terus berkembang, saya siap menghadapi tantangan baru dan berharap dapat memberikan kontribusi positif di lingkungan sekitar saya.
+<br>
+<hr style="width:200px" class="w3-opacity">
+   <h3 align="center">Riwayat Pendidikan</h3>
+    <ul style="list-style-type: none; padding: 0;">
+        <li align="center"><span style="font-weight:bold;" >‍ SMP:</span> SMP Kolese Kanisius, Jakarta</li>
+        <li align="center"><span style="font-weight:bold;">SD:</span> SD Santa Maria, Jakarta</li>
+        <li align="center"><span style="font-weight:bold;"> TK:</span> TK Santa Maria, Jakarta</li>
+    </ul>
+    
+    <hr style="width:200px" class="w3-opacity">
+    <h3 align="center">Riwayat Prestasi</h3>
+    <ul style="list-style-type: none; padding: 0;">
+        <li align="center"><span style="font-weight:bold;" >‍ SMP:</span> Meraih Cum Laude 2x, Meraih Magna Cum Laude 2x, dan Meraih Summa Cum Laude 1x dalam bidang akademik</li>
+        <li align="center"><span style="font-weight:bold;">SD:</span> Memenangkan turnamen taekwondo juara 1 tingkat regional tahun 2019</li>
+    </ul>
+
+    
+    </ul>
+            
+        </div>
+        <div id="form" class="page" style="display: none;">
+            
+       <h2 align="center">Formulir</h2>
+      <form>
+            <p align="center"><input type="email" name="email" placeholder="Email Anda" required></p>
+            
+            <p align="center"><input type="text" name="phone" placeholder="Nomor Telepon" required></p>
+            
+            <p align="center"><textarea name="feedback" rows="4" placeholder="Tanggapan Anda tentang project ini" required></textarea></p>
+            
+            <p align="center"><textarea name="additional-info" rows="4" placeholder="Keterangan tambahan" required></textarea></p>
+            
+            
+           <p align="center"><input type="submit" value="Kirim"></p>
+        </form>
+        </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script>
+        document.querySelectorAll('.nav-link').forEach(link => 
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+                document.getElementById(link.dataset.page).style.display = 'block';
+            })
+        );
+        document.getElementById('home').style.display = 'block'; 
+    </script>
+</body>
+</html>
+
+
+
+    
